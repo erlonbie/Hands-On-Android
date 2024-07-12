@@ -2276,6 +2276,7 @@ public class DevicePolicyManager {
      * band which the password must meet.
      *
      * @see #PASSWORD_QUALITY_SOMETHING
+     * @see #PASSWORD_QUALITY_DEVITANS
      * @see #PASSWORD_QUALITY_NUMERIC
      */
     public static final int PASSWORD_COMPLEXITY_LOW = 0x10000;
@@ -4351,7 +4352,7 @@ public class DevicePolicyManager {
      */
     public static final int PASSWORD_QUALITY_SOMETHING = 0x10000;
 
-    public static final int PASSWORD_QUALITY_DEVTITANS = 0x666;
+    public static final int PASSWORD_QUALITY_DEVTITANS = 0x66600;
 
     /**
      * Constant for {@link #setPasswordQuality}: the user must have entered a
@@ -4522,7 +4523,7 @@ public class DevicePolicyManager {
      * @param admin Which {@link DeviceAdminReceiver} this request is associated with.
      * @param quality The new desired quality. One of {@link #PASSWORD_QUALITY_UNSPECIFIED},
      *            {@link #PASSWORD_QUALITY_BIOMETRIC_WEAK},
-     *            {@link #PASSWORD_QUALITY_SOMETHING}, {@link #PASSWORD_QUALITY_NUMERIC},
+     *            {@link #PASSWORD_QUALITY_SOMETHING},{@link #PASSWORD_QUALITY_DEVTITANS}, {@link #PASSWORD_QUALITY_NUMERIC},
      *            {@link #PASSWORD_QUALITY_NUMERIC_COMPLEX}, {@link #PASSWORD_QUALITY_ALPHABETIC},
      *            {@link #PASSWORD_QUALITY_ALPHANUMERIC} or {@link #PASSWORD_QUALITY_COMPLEX}.
      * @throws SecurityException if {@code admin} is not an active administrator, if {@code admin}
